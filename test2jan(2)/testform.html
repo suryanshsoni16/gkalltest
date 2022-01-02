@@ -1,0 +1,106 @@
+<html>
+    <head>
+        <title>
+            "form made for test"
+        </title>
+    </head>
+    <body bgcolor="#9fa8a3">
+        <h1 style="color:#173e43;font-family: 'Times New Roman', Times, serif;"> Self Registraion form</h1>
+
+        <form id="myForm" class="form">
+            <input type="text" placeholder="First_Name" name="first" required />
+            <br>
+            <br>
+            <input type="text" placeholder="Last_Name" name="last" required/>
+            <br />
+            <br />
+            <input type="email" placeholder="Enter your email" name="email" >
+            <br>
+            <br>
+            <span>DOB::</span>
+            <input type="date"  name="birthday">
+            <input type="reset">
+            <br>
+            <br>
+            <span>Linked url</span>
+
+            <input type="url" placeholder="https://www.xyz.com" name="linkedurl"/>
+            <br><br>
+          
+
+            <select name="course">
+                <option value="0" disabled selected>Select course</option>
+                <option value="1">Full stack web development</option>
+                <option value="2">Advanced web development</option>
+            </select>
+            <br><br>
+
+            <select name="skills">
+                <option value="0" disabled selected>Select Programing skills</option>
+                <option value="1">No coding skills</option>
+                <option value="2">Basic skills</option>
+                <option value="3">Intermediate skills</option>
+                <option value="4">Advanced skills</option>
+            </select>
+            <br>
+            <br>
+           
+            <span>Year of Completion</span>
+                <input type="radio" name="year" value="0" disabled selected>Select Year</input>
+                <br>
+                <input type="radio" name="year" value="2019" >2019</input>
+                <br>
+                <input type="radio" name="year" value="2020" >2020</input>
+                <br>
+                <input type="radio" name="year" value="2021" >2021</input>
+                <br>
+                <input type="radio" name="year" value="2022" >2022</input>
+                <br>
+                <br>
+
+                <span>Fav programing Language</span>
+
+                <input type="checkbox" name="plan" value="0" disabled selected>Select none</input>
+                <br>
+                <input type="checkbox" name="plan" value="python" >python</input>
+                <br>
+                <input type="checkbox" name="plan" value="c" >c</input>
+                <br>
+                <input type="checkbox" name="plan" value="c++" >c++</input>
+                <br>
+                <input type="checkbox" name="plan" value="java" >java</input>
+                <br>
+                <br>
+
+                
+
+                
+                <span>enter college marks (0-100)</span>
+                    <input type="range" placeholder="Marks" name="college_marks" min="0" max="100" /> 
+                    <br>
+                    <br>
+
+                    <span>Password (8-10 words)</span>
+
+                     <input type="password" placeholder="Enter password" minlength="8" name="password" maxlength="10" />
+                     <br>
+                     <br>
+
+                    <button type="submit">submit</button>
+                    <input type="reset" value="reset">
+            
+          
+
+
+        </form>
+
+        <script>
+            for (var value of formData.values()) {
+                console.log(value);
+            }
+           
+
+           
+        </script>
+    </body>
+</html>
