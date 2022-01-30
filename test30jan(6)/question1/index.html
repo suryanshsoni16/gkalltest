@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fetching data from API's</title>
+</head>
+<body>
+    <h1>fetch data from API </h1>
+    <p>The API is "http://universities.hipolabs.com/search?country={country}"</p>
+    <input type="text" placeholder="Type country name..." id="myInput">
+    <div class="search">
+         
+          <button type="button" onclick="getInputValue();">Search</button>
+          <button onClick="window.location.reload();">Search again</button>
+    </div>
+    <hr>
+    <table id="table">
+       
+        <tr id="container">
+            <th>Name</th>
+            <th>domains</th>
+            <th>state-province</th>
+            <th>Country Name</th>
+        </tr>
+           
+      </table>
+
+</h2>
+
+   <script src="index.js"></script> 
+</body>
+</html>
