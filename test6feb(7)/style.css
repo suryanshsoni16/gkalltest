@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding-top: 3rem;
+ 
+  background: linear-gradient( to bottom,
+   
+    #6b6b83 200%,
+   
+    #3b8d99 100%);
+}
+.nav-item {
+  display:flex;
+  flex-direction: column;
+  width: 80%;
+  max-height:250px;
+  margin:0px 50px 0px 120px;
+  border-top-left-radius: 100px ;
+  border-bottom-right-radius: 100px ;
+  
+  
+  align-items:center;
+  justify-content: center;
+  background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+}
+
+h1 {
+color: rgb(179, 131, 226);
+font-size: 80px;
+text-align: center;
+
+-webkit-animation: glow 1s ease-in-out infinite alternate;
+-moz-animation: glow 1s ease-in-out infinite alternate;
+animation: glow 1s ease-in-out infinite alternate;
+}
+
+.add {
+
+
+  width: 240px;
+  height: 150px;
+  background-color: #FF6F91;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.note {
+  background-color: #2c3e50;
+  border-radius: 40px;
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+  margin: 80px 20px;
+  height: 300px;
+  width: 700px;
+  overflow: scroll;
+}
+.note::-webkit-scrollbar {
+  display: none;
+}
+
+.note .tools {
+  background-color: #000c40;
+  display: flex;
+  justify-content: space-around;
+  padding: 0.5rem;
+}
+
+.note .tools button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 25px;
+  margin-left: 0.5rem;
+}
+.note .tools button:hover {
+  font-size: 35px;
+  color: white;
+}
+
+.note textarea {
+  outline: none;
+  font-family: inherit;
+  background-color: #F0F2F0;
+  
+  font-size: 1.2rem;
+  border: none;
+  height: 400px;
+  width: 700px;
+  padding: 20px;
+  overflow-y: scroll;
+}
+
+.main {
+  padding: 20px;
+  height: 400px;
+  max-width: 700px;
+  background-color:#c8dac8;
+  overflow-wrap: break-word;
+  
+  
+}
+h2{
+  color:#F0F2F0;
+}
+
+.hidden {
+  display: none;
+}
